@@ -1,0 +1,40 @@
+{{>partials/header}}
+<div class="container">
+    <div class="row">
+        {{#ceps}}
+        <div class="col-lg-4">
+            <div class="card card-margin">
+                <div class="card-header no-border">
+                    <h5 class="card-title">Informações do CEP</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="widget-49">
+                        <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                                <span class="widget-49-date-day">' '</span>
+                                <span class="widget-49-date-month">-</span>
+                            </div>
+                            <div class="widget-49-meeting-info">
+                                <span class="widget-49-pro-title">CEP: {{cep}}</span>
+                            </div>
+                        </div>
+                        <ol class="widget-49-meeting-points">
+                            <li class="widget-49-meeting-item"><span><strong>Logradouro</strong> {{logradouro}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>Complemento:</strong> {{complemento}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>Bairro:</strong> {{bairro}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>Localidade:</strong> {{localidade}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>UF:</strong> {{uf}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>IBGE:</strong> {{ibge}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>GIA:</strong> {{gia}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>DDD:</strong> {{ddd}}</span></li>
+                            <li class="widget-49-meeting-item"><span><strong>SIAFI:</strong> {{siafi}}</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ceps}}
+    </div>
+</div>
+
+{{>partials/footer}}

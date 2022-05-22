@@ -1,0 +1,37 @@
+{{>partials/header}}
+
+
+<div class="container">
+
+    <div class="form-content">
+        <div class="form-items">
+        <h3>Consultar Ceps</h3>
+            <form action="/enviar-ceps" method="post">
+                <div class="form-group">
+                    <label>Cep 1:</label>
+                    <input type="number"  name="cep"  placeholder="Digite o cep 1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Cep 2:</label>
+                    <input type="number" name="cep2"  placeholder="Digite o cep 2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Cep 3:</label>
+                    <input type="number" name="cep3"  placeholder="Digite o cep 3" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Cep 4:</label>
+                    <input type="number" name="cep4"  placeholder="Digite o cep 4" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Cep 5:</label>
+                    <input type="number" name="cep5"  placeholder="Digite o cep 5" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Consultar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+{{>partials/footer}}
