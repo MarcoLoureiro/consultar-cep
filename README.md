@@ -1,4 +1,4 @@
-# Concessionária
+# Consultar CEPS
 
 # Instalar:
 - Clone o repositório 
